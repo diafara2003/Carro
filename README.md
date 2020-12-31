@@ -75,6 +75,21 @@ GET
 https://localhost:44311/api/vehiculo/TipoVehiculo
 ```
 
+Servicio para agregar un vehiculo
+
+```bash
+POST
+https://localhost:44311/api/vehiculo
+{
+"VehId":0,
+"VehModelo":"sail",
+"VehFecha":2020,
+"VehCilindraje":2000,
+"VehTipoVehiculo":"1",
+VehMarca:"1"
+}
+```
+
 
 Servicio para obtener todas las marcas
 
@@ -82,4 +97,8 @@ Servicio para obtener todas las marcas
 GET
 https://localhost:44311/api/marca
 ```
+
+
+
+
 
