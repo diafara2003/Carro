@@ -1,0 +1,59 @@
+<h5>Registro de vehiculos</h5>
+
+
+<div *ngIf="mostrarAlerta" class="alert alert-success" role="alert">
+    Se registro el vehiculo correctamente
+  </div>
+
+
+<hr class="border border-primary" />
+<div class="justify-content-md-center d-flex">
+
+    <div class="col-md-6 col-sm-12 col-12 border-rounded p-2 shadow-sm">
+        <div class="row">
+
+            
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label class="form-label">Tipo vehiculo</label>
+                        <select [(ngModel)]="vehiculoModel.vehTipoVehiculo" class="form-select" >
+                            <option *ngFor="let tipo of TipoVehiculos" [value]="tipo.tipVehId">{{tipo.tipVehNombre}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label  class="form-label">Marca</label>
+                        <select [(ngModel)]="vehiculoModel.vehMarca" class="form-select">
+                            <option  *ngFor="let marca of Marcas" [value]="marca.marId">{{marca.marNombre}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="Modelo" class="form-label">Modelo</label>
+                        <input type="text"  [(ngModel)]="vehiculoModel.vehModelo" class="form-control" maxlength="10"
+                            id="Modelo" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="Año" class="form-label">Año</label>
+                        <input type="number"  [(ngModel)]="vehiculoModel.vehFecha" maxlength="4" class="form-control"
+                            id="Año" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mb-3">
+                        <label for="Cilindraje" class="form-label">Cilindraje</label>
+                        <input type="number"  [(ngModel)]="vehiculoModel.vehCilindraje" maxlength="5"
+                            class="form-control" id="Cilindraje" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col-12 text-right w-100">
+                    <button type="submit" (click)="onSave()" class="btn btn-primary">Agregar vehiculo</button>
+                </div>
+      
+        </div>
+    </div>
+</div>

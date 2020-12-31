@@ -1,0 +1,27 @@
+<div class="">
+  <h5>Consulta de vehiculos</h5>
+  <hr class="border border-primary" />
+{{fecha}}
+  <div class="col-md-8 col-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Tipo vehiculo</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Modelo</th>
+          <th scope="col">Año</th>
+          <th scope="col">Cilindraje</th>
+        </tr>
+      </thead>
+      <tbody >
+       <tr *ngFor="let vehiculo of vehiculos">
+        <td>{{vehiculo.tipVehNombre}}</td>
+        <td>{{vehiculo.marNombre}}</td>
+        <td>{{vehiculo.vehModelo}}</td>
+        <td>{{vehiculo.vehFecha}}</td>
+        <td>{{vehiculo.vehCilindraje}}</td>        
+       </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

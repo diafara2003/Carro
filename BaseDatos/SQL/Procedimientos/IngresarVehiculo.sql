@@ -9,7 +9,7 @@ GO
 -- Description:	PERMITE CREAR UN VEHICULO
 -- =============================================
 CREATE PROCEDURE dbo.IngresarVehiculo
-	@VehModelo INT ,@VehFecha int,@VehCilindraje NUMERIC(25,5),
+	@VehModelo varchar(200) ,@VehFecha int,@VehCilindraje NUMERIC(25,5),
 	@VehTipoVehiculo INT,@VehMarca INT
 AS
 BEGIN

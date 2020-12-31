@@ -15,8 +15,8 @@ namespace Vehiculos.servicios
         {
 
             ConexionDTO objdto = new ConexionDTO();
-            objdto.procedimiento = "ConsultarVehiculo";
-            objdto.parametros.Add("@tipo", TipoConsulta.Marca);
+            objdto.procedimiento = "dbo.ConsultarVehiculo";
+            objdto.parametros.Add("@tipo",(int) TipoConsulta.Marca);
 
             return MapperCustom.DataTableToList<MarcaDTO>(
                 new Operaciones().ConsultarSPDT(objdto));

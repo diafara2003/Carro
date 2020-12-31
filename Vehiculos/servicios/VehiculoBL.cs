@@ -24,7 +24,7 @@ namespace Vehiculos.servicios
             ConexionDTO objdto = new ConexionDTO();
             ResponseDTO objresultado = new ResponseDTO();
 
-            objdto.procedimiento = "IngresarVehiculo";
+            objdto.procedimiento = "dbo.IngresarVehiculo";
             objdto.parametros.Add("@VehCilindraje", modelo.VehCilindraje);
             objdto.parametros.Add("@VehFecha", modelo.VehFecha);
             objdto.parametros.Add("@VehMarca", modelo.VehMarca);
@@ -48,8 +48,8 @@ namespace Vehiculos.servicios
         {
 
             ConexionDTO objdto = new ConexionDTO();
-            objdto.procedimiento = "ConsultarVehiculo";
-            objdto.parametros.Add("@tipo", TipoConsulta.Vehiculo);
+            objdto.procedimiento = "dbo.ConsultarVehiculo";
+            objdto.parametros.Add("@tipo", (int)TipoConsulta.Vehiculo);
 
             return MapperCustom.DataTableToList<ConsultarVehiculosDTO>(
                 new Operaciones().ConsultarSPDT(objdto));

@@ -7,11 +7,11 @@ namespace DataTransferer.Modelos
     public class VehiculoDTO
     {
         public int VehId { get; set; }
-        public int VehModelo { get; set; }
+        public string VehModelo { get; set; }
         public int VehFecha { get; set; }
         public decimal VehCilindraje { get; set; }
-        public int VehTipoVehiculo { get; set; }
-        public int VehMarca { get; set; }
+        public string VehTipoVehiculo { get; set; }
+        public string VehMarca { get; set; }
 
     }
 }
