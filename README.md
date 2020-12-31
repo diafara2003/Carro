@@ -24,6 +24,10 @@ framework de diseño:
 - ejecutar en la base datos el archivo **Script_initial.sql** ubicado en la carperta BaseDatos/SQL/Procedimientos
 
 
+```bash
+git clone https://github.com/diafara2003/Carro.git
+```
+
 ## Ejecucion
 
 **BackEnd**
