@@ -3,25 +3,45 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carro", "Carro.csproj", "{02F80176-31AC-48F1-A276-1008C81C4978}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Carro", "Carro.csproj", "{02F80176-31AC-48F1-A276-1008C81C4978}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Negocio", "Negocio", "{DA17D5A7-2AC1-449B-A013-4A8B00C93C3E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructura", "Infraestructura", "{7E0B4CF4-14F6-4651-A008-0F72E2F9E811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehiculos", "..\Vehiculos\Vehiculos.csproj", "{DDE5EDBD-9264-4B1C-843C-3279F17F9766}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehiculos", "..\Vehiculos\Vehiculos.csproj", "{DDE5EDBD-9264-4B1C-843C-3279F17F9766}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatos", "..\BaseDatos\BaseDatos.csproj", "{C2D61767-690E-4962-8A9A-4B3B099C4BBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseDatos", "..\BaseDatos\BaseDatos.csproj", "{C2D61767-690E-4962-8A9A-4B3B099C4BBC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistencia", "Persistencia", "{5EC73092-6DFC-487A-BBAB-E7C432661EA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTransferer", "..\DataTransferer\DataTransferer.csproj", "{374FBED2-376A-4DB3-AE90-2B6D2049B336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTransferer", "..\DataTransferer\DataTransferer.csproj", "{374FBED2-376A-4DB3-AE90-2B6D2049B336}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{ADCA142A-AF61-4881-AD28-D0F4C62FFBBC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Librerias", "Librerias", "{8CAE41D4-E3BC-4378-9FAD-35629E5D70A8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sitio", "Sitio", "{2321B65F-5EC3-4B64-9249-2951F7ED81A4}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "sitio", "..\sitio\", "{70B2B897-558D-407E-AE78-65C8CD1671EC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62933"
+		Debug.AspNetCompiler.PhysicalPath = "..\sitio\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62933\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62933"
+		Release.AspNetCompiler.PhysicalPath = "..\sitio\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62933\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62933"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +65,10 @@ Global
 		{374FBED2-376A-4DB3-AE90-2B6D2049B336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{374FBED2-376A-4DB3-AE90-2B6D2049B336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{374FBED2-376A-4DB3-AE90-2B6D2049B336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B2B897-558D-407E-AE78-65C8CD1671EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B2B897-558D-407E-AE78-65C8CD1671EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B2B897-558D-407E-AE78-65C8CD1671EC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B2B897-558D-407E-AE78-65C8CD1671EC}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +82,7 @@ Global
 		{5EC73092-6DFC-487A-BBAB-E7C432661EA5} = {8CAE41D4-E3BC-4378-9FAD-35629E5D70A8}
 		{374FBED2-376A-4DB3-AE90-2B6D2049B336} = {5EC73092-6DFC-487A-BBAB-E7C432661EA5}
 		{8CAE41D4-E3BC-4378-9FAD-35629E5D70A8} = {ADCA142A-AF61-4881-AD28-D0F4C62FFBBC}
+		{70B2B897-558D-407E-AE78-65C8CD1671EC} = {2321B65F-5EC3-4B64-9249-2951F7ED81A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28AEDC13-3180-4C2C-B74E-A3C79AE401CE}
